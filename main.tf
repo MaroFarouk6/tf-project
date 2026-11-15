@@ -1,6 +1,7 @@
 terraform {
   required_providers {
     aws = {
+
       source  = "hashicorp/aws"
       version = "6.73.0"
     }
@@ -8,15 +9,16 @@ terraform {
 }
 
 provider "aws" {
-  access_key = "<access_key>"
-  secret_key = "<secret_key>"
+  region = "us-east-1"
+  access_key = ""
+  secret_key = "7UFKHPzsazCw51NxaAioHoqm9idOsSyfKtWbALlL"
   # Configuration options
 }
-resource "aws_s3_bucket" "tf-S3-bucket" {
-  bucket = "tf-S3-bucket"
-  region = "us-east-1"
+resource "aws_s3_bucket" "tf-s3-bucket" {
+  bucket = "depi-tf-s3-bucket-omar-farouk-7112006"
+
   tags = {
-    Name        = "tf-S3-bucket"
-    Environment = "DevOps"
+    Name        = "tf-s3-bucket"
+    Environment = "devops"
   }
 }
