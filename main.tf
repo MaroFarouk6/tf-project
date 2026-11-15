@@ -15,7 +15,7 @@ provider "aws" {
   # Configuration options
 }
 resource "aws_s3_bucket" "tf-s3-bucket" {
-  bucket = "depi-tf-s3-bucket-omar-farouk-7112006"
+  bucket = s3_bucket_name
 
   tags = {
     Name        = "tf-s3-bucket"
