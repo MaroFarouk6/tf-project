@@ -11,7 +11,7 @@ terraform {
 provider "aws" {
   region = "us-east-1"
   access_key = ""
-  secret_key = "7UFKHPzsazCw51NxaAioHoqm9idOsSyfKtWbALlL"
+  secret_key = ""
   # Configuration options
 }
 resource "aws_s3_bucket" "tf-s3-bucket" {
